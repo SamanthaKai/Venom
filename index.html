@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Venom Show Case</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				Venom
+			</h1>
+		</header>
+
+		<main>
+			<section class="gallery">
+				<div class="scene" onclick="openModal('first.jpeg')">
+					<img src="first.jpeg" alt="First Appearance">
+					<p>This was his first full appearance</p>
+				</div>
+
+				<div class="scene" onclick="openModal('second.jpeg')">
+					<img src="second.jpeg" alt="His other face">
+					<p>Venom's other face</p>
+				</div>
+
+				<div class="scene" onclick="openModal('third.jpeg')">
+					<img src="third.jpeg" alt="The threat">
+					<p>The threat</p>
+				</div>
+
+				<div class="scene" onclick="openModal('fourth.jpg')">
+					<img src="fourth.jpg" alt="Others">
+					<p>The threat</p>
+				</div>
+
+				<div class="scene" onclick="openModal('fifth.jpg')">
+					<img src="fifth.jpg" alt="Others">
+					<p>The threat</p>
+				</div>
+			</section>
+		</main>
+
+		<div id="modal" class="modal" onclick="closeModal()">
+			<img src="fourth.jpg" alt="final page">
+			<p id="modal-caption"></p>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

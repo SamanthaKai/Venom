@@ -1,0 +1,53 @@
+body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #121212;
+	color: #fff;
+}
+
+header{
+	text-align: center;
+	padding: 2rem;
+	background-color: #740a0a;
+	font-size: 1.5rem;
+}
+.gallery{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	padding: rem;
+}
+.scene{
+	background-color: #1e1e1e;
+	border-radius: 8px;
+	padding: 1rem;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+.scene :hover{
+	transform: scale(1.05);
+}
+.scene img{
+	width: 100%;
+	border-radius: 8px;
+}
+.modal img{
+	display: none;
+	position: fixed;
+	z-index: 10;
+	top: 0; left: 0;
+	width: 100; height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.modal img{
+	max-width: 90%;
+	max-height: 80%;
+	border-radius: 8px;
+}
+.modal p{
+	margin-top: 1rem;
+	font-size: 1.2rem;
+}
